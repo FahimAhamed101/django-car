@@ -85,13 +85,13 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'postgres://isqdoctssbybhf:12e15630304647e6e7d3042d49ee0ee6e5c91882ff25007316dd2791e33b9070@ec2-67-202-63-147.compute-1.amazonaws.com:5432/d3e9b9gs78tl2d',
+        'ENGINE': 'django.db.backends.postgresql_psycop2',
 
         'NAME': 'd3e9b9gs78tl2d',
 
         'USER': 'isqdoctssbybhf',
 
-        'PASSWORD': '12e15630304647e6e7d3042d49ee0ee6e5c91882ff25007316dd2791e33b9070',
+        'PASSWORD': '5432',
 
         'HOST': 'ec2-67-202-63-147.compute-1.amazonaws.com',
 
