@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -23,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rhp86j7hrc6dk(-w&_#dczyq68b5jy&zaxz@$z(ytv1^q&nib*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 LOGIN_REDIRECT_URL='dashboard'
 
 # Application definition
@@ -48,7 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
      'allauth.socialaccount.providers.google', 
      'allauth.socialaccount.providers.facebook',
-     'contacts',]
+     'contacts', 'whitenoise.runserver_nostatic',]
 SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -166,3 +165,8 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'tomalahamed0@gmail.com'
 EMAIL_HOST_PASSWORD = '01706617724'
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
