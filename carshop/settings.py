@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycop2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
         'NAME': 'd3e9b9gs78tl2d',
 
