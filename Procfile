@@ -1,0 +1,1 @@
+web: gunicorn car100.wsgi --log-file -
