@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+   
     'pages',
     'cars',
     'ckeditor',
@@ -48,7 +48,10 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
      'allauth.socialaccount.providers.google', 
      'allauth.socialaccount.providers.facebook',
-     'contacts', 'whitenoise.runserver_nostatic',]
+     'contacts',
+     'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',]
 SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -164,5 +167,9 @@ EMAIL_HOST_PASSWORD = ''
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'fahim1213456',
+    'API_KEY': '554889398149233',
+    'API_SECRET': 'xOh9Pctuw1UhBuRrj_XuP79ubbA'
+}
