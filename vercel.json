@@ -20,7 +20,7 @@
           },
       {
         "src": "/(.*)",
-        "dest": "webshop/wsgi.py"
+        "dest": "django-car/wsgi.py"
       }
     ]
 }
