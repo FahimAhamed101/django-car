@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rhp86j7hrc6dk(-w&_#dczyq68b5jy&zaxz@$z(ytv1^q&nib*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
 LOGIN_REDIRECT_URL='dashboard'
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
      'cloudinary_storage',
     
     'cloudinary',]
-SITE_ID = 1
+SITE_ID = 2
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
