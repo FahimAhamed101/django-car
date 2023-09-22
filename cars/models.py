@@ -59,7 +59,7 @@ class Cars(models.Model):
 
     year_choice = []
     for r in range(2000, (datetime.now().year+1)):
-        year_choice.insert((r,r))
+        year_choice.insert(r,r)
 
     features_choices = (
         ('Cruise Control', 'Cruise Control'),
