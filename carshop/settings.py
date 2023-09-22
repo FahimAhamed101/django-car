@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
 LOGIN_REDIRECT_URL='dashboard'
 WSGI_APPLICATION = 'carshop.wsgi.app'
 # Application definition
-CSRF_TRUSTED_ORIGINS = ['https://django-oi4r5vfrd-fahimahamed101.vercel.app/']
+#CSRF_TRUSTED_ORIGINS = ['https://django-oi4r5vfrd-fahimahamed101.vercel.app/']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
      'cloudinary_storage',
     
     'cloudinary',]
-SITE_ID = 2
+SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -62,10 +62,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-AUTHENTICATION_BACKENDS = (
-    'allauth.account.auth_backends.AuthenticationBackend',
-    'django.contrib.auth.backends.ModelBackend',
-)
 
 ROOT_URLCONF = 'carshop.urls'
 
@@ -95,26 +91,26 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'd3e9b9gs78tl2d',
+        'NAME': 'carshop',
 
-        'USER': 'isqdoctssbybhf',
+        'USER': 'postgres',
 
-        'PASSWORD': '5432',
+        'PASSWORD': '1234',
 
-        'HOST': 'ec2-67-202-63-147.compute-1.amazonaws.com',
+        'HOST': 'localhost',
 
-        'PORT': '4321',
+        'PORT': '5432',
     }
 }"""
-STATIC_URL = 'static/'
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static",]
-    
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
 }
+STATIC_URL = 'static/'
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+#
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
