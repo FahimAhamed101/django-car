@@ -27,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
 LOGIN_REDIRECT_URL='dashboard'
-WSGI_APPLICATION = 'carshop.wsgi.application'
+WSGI_APPLICATION = 'carshop.wsgi.app'
 # Application definition
-
+CSRF_TRUSTED_ORIGINS = ['https://django-oi4r5vfrd-fahimahamed101.vercel.app/']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
         'PORT': '4321',
     }
 }"""
-CSRF_TRUSTED_ORIGINS = ['https://django-oi4r5vfrd-fahimahamed101.vercel.app/']
+
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
 }
