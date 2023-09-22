@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-   
+     'django.contrib.staticfiles',
     'pages',
     'cars',
     'ckeditor',
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
      'allauth.socialaccount.providers.facebook',
      'contacts',
      'cloudinary_storage',
-    'django.contrib.staticfiles',
+    
     'cloudinary',]
 SITE_ID = 1
 MIDDLEWARE = [
@@ -145,7 +145,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATICFILES_DIRS=[os.path.join(BASE_DIR,"static"), "staticfiles_build"]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static/')
 MEDIA_URL = '/media/'
 MEDIA_DIRS = [
     BASE_DIR / "media",
