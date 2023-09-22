@@ -168,7 +168,6 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'fahim1213456',
