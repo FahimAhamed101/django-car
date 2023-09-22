@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "django-car/wsgi.py",
+        "src": "carshop/wsgi.py",
         "use": "@vercel/python",
         "config":{"maxLambdaSize":"15mb","runtime":"python3.9"}
       },
@@ -20,7 +20,7 @@
           },
       {
         "src": "/(.*)",
-        "dest": "django-car/wsgi.py"
+        "dest": "carshop/wsgi.py"
       }
     ]
 }
