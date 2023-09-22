@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
@@ -101,11 +101,11 @@ DATABASES = {
 
         'PORT': '4321',
     }
-}
-
-"""DATABASES = {
-    'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
 }"""
+
+DATABASES = {
+    'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
