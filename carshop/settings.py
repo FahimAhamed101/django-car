@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
         'PORT': '4321',
     }
 }"""
-
+CSRF_TRUSTED_ORIGINS = ['https://django-oi4r5vfrd-fahimahamed101.vercel.app/']
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
 }
