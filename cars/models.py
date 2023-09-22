@@ -58,10 +58,8 @@ class Cars(models.Model):
     )
 
     year_choice = []
-    for r in range(len(2000, (datetime.now().year+1))):
-        r = List[i]
-        r = List[i]
-        year_choice.append([r,r])
+    for r in range(2000, (datetime.now().year+1)):
+        year_choice.append((r,r))
 
     features_choices = (
         ('Cruise Control', 'Cruise Control'),
