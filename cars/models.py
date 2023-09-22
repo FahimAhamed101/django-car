@@ -57,7 +57,10 @@ class Cars(models.Model):
         ('WY', 'Wyoming'),
     )
 
-    year_choice = [(r,r) for r in range(1984, datetime.now().year+1)]
+    year_choice = []
+    for r in range(2000, (datetime.now().year+1)):
+        year_choice.append((r,r))
+
     features_choices = (
         ('Cruise Control', 'Cruise Control'),
         ('Audio Interface', 'Audio Interface'),
