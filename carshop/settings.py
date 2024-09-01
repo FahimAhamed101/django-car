@@ -13,6 +13,7 @@ import os
 import dj_database_url
 from pathlib import Path
 import cloudinary_storage
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -88,10 +89,16 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+from dotenv import load_dotenv
+load_dotenv() 
 
-DATABASES = {
-    'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
-}
+
+DATABASES['default'] = dj_database_url.config(os.getenv('DATABASE_URL'),
+    conn_max_age=600,
+    conn_health_checks=True,
+)
+
+
 """DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
