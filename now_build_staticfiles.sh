@@ -1,7 +1,7 @@
 # now_build_staticfiles.sh
 
 # Install Python 3.6 since it is missing in the Now build environment
-pip install -r requirements.txt
+pip3.10 install -r requirements.txt
 
 # make migrations
 python3.10 manage.py migrate 
