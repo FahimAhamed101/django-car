@@ -3,7 +3,8 @@
       {
         "src": "carshop/wsgi.py",
         "use": "@vercel/python",
-        "config":{"maxLambdaSize":"15mb","runtime":"Python3.10"}
+        "config":{ "runtime": "python3.10",
+        "maxLambdaSize": "15mb"}
       },
       {
         "src": "now_build_staticfiles.sh",
