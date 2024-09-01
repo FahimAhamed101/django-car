@@ -44,11 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'accounts',
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-     'allauth.socialaccount.providers.google', 
-     'allauth.socialaccount.providers.facebook',
+
      'contacts',
      'cloudinary_storage',
     
