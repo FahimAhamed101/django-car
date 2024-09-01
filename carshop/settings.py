@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
 LOGIN_REDIRECT_URL='dashboard'
-WSGI_APPLICATION = 'carshop.wsgi.app'
+
 # Application definition
 #CSRF_TRUSTED_ORIGINS = ['https://django-oi4r5vfrd-fahimahamed101.vercel.app/']
 INSTALLED_APPS = [

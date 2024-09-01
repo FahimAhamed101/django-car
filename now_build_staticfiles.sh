@@ -3,7 +3,7 @@
 # Install Python 3.6 since it is missing in the Now build environment
 python3  -m pip  install -r requirements.txt
 
-# make migrations
+python3 manage.py makemigrations
 python3 manage.py migrate 
 python3 manage.py migrate sessions
 python3 manage.py collectstatic --no-input --clear
