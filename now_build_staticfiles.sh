@@ -1,9 +1,10 @@
 # now_build_staticfiles.sh
 
 # Install Python 3.6 since it is missing in the Now build environment --no-input --clear
-pipenv shell
+python3 -m venv env
+source env/Scripts/activate
 python3 -m pip install -r requirements.txt
-
+python3 manage.py makemigrations cars
 python3 --version
 python3 manage.py migrate 
 python3 manage.py migrate sessions
