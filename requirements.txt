@@ -17,7 +17,7 @@ idna==3.8
 packaging==24.1
 pillow==10.4.0
 pip-upgrader==1.4.15
-psycopg2==2.9.9
+
 psycopg2-binary==2.9.9
 pycparser==2.22
 PyJWT==2.9.0
