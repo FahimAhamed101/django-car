@@ -104,21 +104,21 @@ DATABASES = {
         conn_health_checks=True,
     )
 }"""
-DATABASES = {
+"""DATABASES = {
     'default': dj_database_url.parse(
         'postgresql://postgres:RSKJDffNuigfkLgVaZddRRLFzjDJLXit@junction.proxy.rlwy.net:34561/railway',
         conn_max_age=600,
         conn_health_checks=True,
     )
-}
+}"""
 
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}"""
+}
 
 STATIC_URL = 'static/'
 
