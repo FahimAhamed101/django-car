@@ -7,7 +7,6 @@ cffi==1.17.0
 charset-normalizer==3.3.2
 cloudinary==1.41.0
 constantly==23.10.4
-daphne==4.1.2
 dj-database-url==2.2.0
 Django==5.1
 django-allauth==64.1.0
@@ -21,7 +20,6 @@ idna==3.8
 incremental==24.7.2
 Markdown==3.7
 pillow==10.4.0
-psycopg2==2.9.9
 psycopg2-binary==2.9.9
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
