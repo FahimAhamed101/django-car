@@ -20,7 +20,7 @@ idna==3.8
 incremental==24.7.2
 Markdown==3.7
 pillow==10.4.0
-psycopg2==2.9.9
+
 psycopg2-binary==2.9.9
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
@@ -35,7 +35,7 @@ six==1.16.0
 sqlparse==0.5.1
 Twisted==24.7.0
 txaio==23.1.1
-typing_extensions==4.12.2
+
 tzdata==2024.1
 urllib3==2.2.2
 zope.interface==7.0.2
