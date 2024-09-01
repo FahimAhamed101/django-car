@@ -95,15 +95,18 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
 }"""
 
-DATABASE_URL= 'postgresql://postgres:RSKJDffNuigfkLgVaZddRRLFzjDJLXit@junction.proxy.rlwy.net:34561/railway'
+"""DATABASE_URL= 'postgresql://postgres:RSKJDffNuigfkLgVaZddRRLFzjDJLXit@junction.proxy.rlwy.net:34561/railway'
 DATABASES = {
     'default': dj_database_url.parse(
         DATABASE_URL,
         conn_max_age=600,
         conn_health_checks=True,
     )
-}
-
+}"""
+DATABASES['default'] = dj_database_url.config('postgresql://postgres:RSKJDffNuigfkLgVaZddRRLFzjDJLXit@junction.proxy.rlwy.net:34561/railway',
+    conn_max_age=600,
+    conn_health_checks=True,
+)
 """DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
