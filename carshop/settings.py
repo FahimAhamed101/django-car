@@ -103,10 +103,15 @@ DATABASES = {
         conn_health_checks=True,
     )
 }"""
-DATABASES['default'] = dj_database_url.parse('postgresql://postgres:RSKJDffNuigfkLgVaZddRRLFzjDJLXit@junction.proxy.rlwy.net:34561/railway',
-    conn_max_age=600,
-    conn_health_checks=True,
-)
+DATABASES = {
+    'default': dj_database_url.parse(
+        'postgresql://postgres:RSKJDffNuigfkLgVaZddRRLFzjDJLXit@junction.proxy.rlwy.net:34561/railway',
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
+
+
 """DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
