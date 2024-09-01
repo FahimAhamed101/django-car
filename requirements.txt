@@ -13,6 +13,7 @@ django-js-asset==2.2.0
 django-multiselectfield==0.1.13
 idna==3.8
 pillow==10.4.0
+psycopg-binary==3.2.1
 psycopg2-binary==2.9.9
 pycparser==2.22
 PyJWT==2.9.0
