@@ -1,7 +1,7 @@
 # now_build_staticfiles.sh
 
 # Install Python 3.6 since it is missing in the Now build environment --no-input --clear
-
+pipenv shell
 python3 -m pip install -r requirements.txt
 
 python3 --version
