@@ -88,21 +88,7 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'carshop',
-
-        'USER': 'postgres',
-
-        'PASSWORD': '1234',
-
-        'HOST': 'localhost',
-
-        'PORT': '5432',
-    }
-}"""
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
 }
