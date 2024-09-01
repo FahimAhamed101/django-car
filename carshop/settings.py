@@ -92,14 +92,16 @@ WSGI_APPLICATION = 'carshop.wsgi.application'
 from dotenv import load_dotenv
 load_dotenv() 
 
-DATABASES = {
+"""DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'), conn_max_age=600),
-}
-"""DATABASES = {'default' : dj_database_url.config(os.getenv('DATABASE_URL'),
+}"""
+
+
+DATABASES['default'] = dj_database_url.parse(
+    os.getenv('DATABASE_URL'),
     conn_max_age=600,
     conn_health_checks=True,
-)}"""
-
+)
 
 """DATABASES = {
     'default': {
