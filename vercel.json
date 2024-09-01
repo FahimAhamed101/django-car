@@ -2,8 +2,8 @@
     "builds": [
       {
         "src": "carshop/wsgi.py",
-        "use": "@vercel/python3.10",
-        "config":{ "runtime": "python3.10",
+        "use": "@vercel/python3.9",
+        "config":{ "runtime": "python3.9",
         "maxLambdaSize": "15mb"}
       },
       {
