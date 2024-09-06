@@ -7,10 +7,10 @@
         "maxLambdaSize": "15mb"}
       },
       {
-        "src": "now_build_staticfiles.sh",
+        "src": "bash now_build_staticfiles.sh",
         "use": "@now/static-build",
         "config": {
-          "distDir": "staticfiles_build"
+          "distDir": "static"
         }
       }
     ],
@@ -23,7 +23,7 @@
         "src": "/(.*)",
         "dest": "carshop/wsgi.py"
       }
-    ],
-    "outputDirectory": "staticfiles_build"
+    ]
+  
   
 }
